@@ -1,0 +1,37 @@
+// USERS
+GET ${BASE_URL}/api/users = getAllUsers
+GET ${BASE_URL}/api/users/:id = getSingleUser
+POST ${BASE_URL}/api/users = createUser
+PATCH ${BASE_URL}/api/users/:id = updateUser
+DELETE ${BASE_URL}/api/users/:id = deleteUser
+POST ${BASE_URL}/api/users/login = login
+
+// TABS
+GET ${BASE_URL}/api/tabs = getAllTabs
+POST ${BASE_URL}/api/tabs = createTab
+PATCH ${BASE_URL}/api/tabs/:id = updateTab
+DELETE ${BASE_URL}/api/tabs/:id = deleteTab
+
+// CARDS
+GET ${BASE_URL}/api/cards = getAllCardInfo
+POST ${BASE_URL}/api/cards/:orderId = createCardInfo
+PATCH ${BASE_URL}/api/cards/:orderId = updateCardInfo
+
+// ORDERS
+GET ${BASE_URL}/api/orders = getAllOrders
+GET ${BASE_URL}/api/orders/ids = getOrderIds
+PATCH ${BASE_URL}/api/orders/updateOrdersTab = updateOrdersTab
+GET ${BASE_URL}/api/orders/:id = getSingleOrder
+POST ${BASE_URL}/api/orders = createOrder
+PATCH ${BASE_URL}/api/orders/:id = updateOrder
+DELETE ${BASE_URL}/api/orders/:id = deleteOrder
+
+// COMMENTS
+GET ${BASE_URL}/api/comments/:orderId = getAllCommentsOnOrder
+POST ${BASE_URL}/api/comments = createComment
+
+// MAILS
+POST ${BASE_URL}/api/mails/contact-us = contactMail
+POST ${BASE_URL}/api/mails/get-quote = getQuote
+POST ${BASE_URL}/api/mails/calculate-cost = calculateCost
+
